@@ -3,7 +3,7 @@ package idcreator
 import (
 	dbm "arrowim/src/clcong/arrowim/db/dbmanager"
 	"arrowim/src/clcong/arrowim/message"
-	l4g "arrowim/clcong.com/utilslog4go"
+	l4g "arrowim/github.com/utilslog4go"
 	"code.google.com/p/log4go"
 )
 

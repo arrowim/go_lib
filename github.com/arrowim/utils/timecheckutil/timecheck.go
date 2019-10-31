@@ -1,9 +1,9 @@
 package timecheckutil
 
 import (
-	"arrowim/clcong.com/utils/list"
-	"arrowim/clcong.com/utils/sync"
-	"arrowim/clcong.com/utils/timeutils"
+	list2 "arrowim/github.com/arrowim/utils/list"
+	sync2 "arrowim/github.com/arrowim/utils/sync"
+	timeutils2 "arrowim/github.com/arrowim/utils/timeutils"
 	"time"
 )
 
@@ -16,7 +16,7 @@ type TimeCheckNode struct {
 	Checker    map[TimeChecker]bool
 }
 
-func (self *TimeCheckNode) Compare(comparator list.Comparator) int {
+func (self *TimeCheckNode) Compare(comparator list2.Comparator) int {
 	if v, ok := comparator.(*TimeCheckNode); ok {
 		if v.DelineTime > self.DelineTime {
 			return -1
@@ -38,8 +38,8 @@ func CreateTimeCheckNode(delineTime int32) *TimeCheckNode {
 }
 
 type TimeCheck struct {
-	data list.SortList
-	lock sync.Mutex
+	data list2.SortList
+	lock sync2.Mutex
 }
 
 func createTimeCheck() *TimeCheck {
@@ -67,7 +67,7 @@ func (self *TimeCheck) GetTimeoutNode() []TimeChecker {
 	s := self.data.Front()
 
 	if v, ok := s.(*TimeCheckNode); ok {
-		if v.DelineTime <= timeutils.GetTimeStamp() {
+		if v.DelineTime <= timeutils2.GetTimeStamp() {
 			for k, _ := range v.Checker {
 				r = append(r, k)
 			}

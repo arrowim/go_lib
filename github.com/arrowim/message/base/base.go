@@ -1,9 +1,9 @@
 package base
 
 import (
-	"arrowim/clcong.com/arrowim/message/command"
-	"arrowim/clcong.com/arrowim/message/idmanager"
-	b "arrowim/clcong.com/utils/bytes"
+	"arrowim/github.com/arrowim/message/command"
+	"arrowim/github.com/arrowim/message/idmanager"
+	b "arrowim/github.com/arrowim/utils/bytes"
 	//	"fmt"
 	//	"fmt"
 )

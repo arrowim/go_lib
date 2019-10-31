@@ -1,7 +1,7 @@
 package bytes
 
 import (
-	bytes "bytes"
+	"bytes"
 	"encoding/binary"
 	"errors"
 	//	"fmt"

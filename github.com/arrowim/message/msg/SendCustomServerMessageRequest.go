@@ -1,9 +1,9 @@
 package msg
 
 import (
-	"arrowim/clcong.com/arrowim/message/base"
-	cmd "arrowim/clcong.com/arrowim/message/command"
-	b "arrowim/clcong.com/utils/bytes"
+	"arrowim/github.com/arrowim/message/base"
+	cmd "arrowim/github.com/arrowim/message/command"
+	b "arrowim/github.com/arrowim/utils/bytes"
 )
 
 const (

@@ -41,11 +41,11 @@ func (set *HashSet) Same(other Set) bool {
 	if other == nil {
 		return false
 	}
-	if set.Len() != other.Len() {
+	if set.Len() != Len() {
 		return false
 	}
 	for key := range set.m {
-		if !other.Contains(key) {
+		if !Contains(key) {
 			return false
 		}
 	}

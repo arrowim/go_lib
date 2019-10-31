@@ -1,9 +1,9 @@
 package msg
 
 import (
-	"arrowim/clcong.com/arrowim/message/base"
-	cmd "arrowim/clcong.com/arrowim/message/command"
-	b "arrowim/clcong.com/utils/bytes"
+	"arrowim/github.com/arrowim/message/base"
+	cmd "arrowim/github.com/arrowim/message/command"
+	b "arrowim/github.com/arrowim/utils/bytes"
 )
 
 //服务端发送给客户端自定义消息
