@@ -1,0 +1,5 @@
+package serverbase
+
+func InitServiceCosumer()  {
+	
+}
